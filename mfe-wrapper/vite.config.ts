@@ -11,10 +11,11 @@ export default defineConfig({
     TanStackRouterVite(),
     federation({
       name: "wrapper-app",
-      // remotes: {
-      //   watchlist: "http://localhost:5001/assets/watchlistRemoteEntry.js",
-      //   movies: "http://localhost:5002/assets/moviesRemoteEntry.js",
-      // },
+      remotes: {
+        todoList: "http://localhost:5001/assets/todolistRemoteEntry.js",
+        todoManager: "http://localhost:5002/assets/todoManagerRemoteEntry.js",
+        todoAuth: "http://localhost:5003/assets/todoAuthRemoteEntry.js",
+      },
       shared: ["react", "react-dom"],
     }),
   ],

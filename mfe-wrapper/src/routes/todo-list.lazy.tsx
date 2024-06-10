@@ -1,10 +1,8 @@
 import { createLazyFileRoute } from '@tanstack/react-router'
+import React from "react";
 
-// @ts-ignore
+const TodoList = React.lazy(() => import('todoList/TodoList'))
+
 export const Route = createLazyFileRoute('/todo-list')({
   component: TodoList,
 })
-
-function TodoList() {
-  return <div className="p-2">Hello from Todo list page!!</div>
-}

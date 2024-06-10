@@ -12,7 +12,7 @@ export const Route = createRootRoute({
           List
         </Link>{' '}
         <Link to="/todo-creation" className="[&.active]:font-bold">
-          Create Todo
+          Manage
         </Link>{' '}
         <Link to="/login" className="[&.active]:font-bold">
           Login
